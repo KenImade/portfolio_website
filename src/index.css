@@ -9,7 +9,7 @@
 }
 
 :root {
-    --primary-hue: 270;
+    --primary-hue: 211;
     --black-lightness: 15%;
     --dark-lightness: 44%;
     --light-lightness: 94%;
@@ -44,6 +44,50 @@ body {
     font-size: 0.9rem;
 }
 
+/* THEME CHANGE */
+main.color-1 {
+    --primary-hue: 211;
+}
+
+main.color-2 {
+    --primary-hue: 243;
+}
+
+main.color-3 {
+    --primary-hue: 195;
+}
+
+main.color-4 {
+    --primary-hue: 166;
+}
+
+main.color-5 {
+    --primary-hue: 287;
+}
+
+main.color-6 {
+    --primary-hue: 332;
+}
+
+main.bg-2 {
+    --black-lightness: 96%;
+    --dark-lightness: 60%;
+    --light-lightness: 12%;
+    --white-lightness: 6%;
+    --color-white: hsl(0, 5%, var(--white-lightness));
+    --color-light: hsl(var(--primary-hue), 5%, var(--light-lightness));
+    --color-black: hsl(var(--primary-hue), 5%, var(--black-lightness));
+    --color-dark: hsl(var(--primary-hue), 5%, var(--dark-lightness));
+}
+
+main {
+    color: var(--color-dark);
+    --color-primary: hsl(var(--primary-hue), 89%, 41%);
+}
+
+
+
+
 /* GENERAL CONTAINER CLASS */
 .container {
     width: var(--container-width-lg);
@@ -74,7 +118,7 @@ section > p {
 
 /* GENERAL LINK STYLES */
 a {
-    color: var(--color-white);
+    /* color: var(--color-white); */
     transition: var(--transition);
 }
 

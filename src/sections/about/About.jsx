@@ -1,3 +1,6 @@
+import { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import AboutImage from '../../assets/about.jpg'
 import CV from '../../assets/cv.pdf';
 import data from './data';
@@ -9,8 +12,12 @@ import Card from '../../components/card/Card';
 
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, [])
+
   return (
-    <section id='about'>
+    <section id='about' data-aos="fade-in">
       <div className="container about__container">
         <div className="about__left">
           <div className="about__portrait">
