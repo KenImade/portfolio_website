@@ -1,7 +1,6 @@
 import { FaBrain } from "react-icons/fa";
 import { FaMagnifyingGlassChart } from "react-icons/fa6";
 import { FaCogs } from "react-icons/fa";
-import { LuCodeXml } from "react-icons/lu";
 
 const data = [
     {
@@ -26,15 +25,7 @@ const data = [
         desc: 'Building robust data pipelines and scalable architectures is key to efficient data management.\
          I specialize in designing, developing, and maintaining systems that ensure data is collected, processed,\
           and delivered seamlessly, enabling teams to work with reliable, clean data.'
-    },
-    {
-        id: 4,
-        icon: <LuCodeXml />,
-        title: 'Web Development',
-        desc: 'Building robust data pipelines and scalable architectures is key to efficient data management.\
-         I specialize in designing, developing, and maintaining systems that ensure data is collected, processed,\
-          and delivered seamlessly, enabling teams to work with reliable, clean data.'
-    },
+    }
 ]
 
 export default data;
