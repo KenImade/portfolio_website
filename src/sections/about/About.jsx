@@ -26,7 +26,7 @@ const About = () => {
         </div>
         <div className="about__right">
           <h2>About Me</h2>
-          <div className="about__cards">
+          {/* <div className="about__cards">
             {
               data.map(item => (
                 <Card key={item.id} className="about__card">
@@ -36,7 +36,7 @@ const About = () => {
                 </Card>
               ))
             }
-          </div>
+          </div> */}
           <p>
             Hi, I'm Kenneth, a passionate Software Engineer with a strong focus on Data Science and Engineering.
             With a deep understanding of building data-driven solutions, 
