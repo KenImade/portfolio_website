@@ -38,8 +38,8 @@ const About = () => {
             }
           </div>
           <p>
-            Hi, I'm [Your Name], a passionate Software Engineer with a strong focus on Data Science, Data Engineering, 
-            and Web Development. With a deep understanding of building data-driven solutions, 
+            Hi, I'm Kenneth, a passionate Software Engineer with a strong focus on Data Science and Engineering.
+            With a deep understanding of building data-driven solutions, 
             I work at the intersection of cutting-edge technologies to solve complex problems and drive business impact.
           </p>
           <p>
