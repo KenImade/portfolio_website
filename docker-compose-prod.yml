@@ -1,9 +1,0 @@
-
-services:
-  portfolio-website:
-    build:
-      context: .
-      dockerfile: Dockerfile.prod
-    ports:
-      - "8080:80"
-    container_name: portfolio-website-prod
