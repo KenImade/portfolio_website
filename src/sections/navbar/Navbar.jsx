@@ -1,4 +1,4 @@
-import Logo from '../../assets/logo.jpg'
+import Logo from '../../assets/logo.jpeg'
 import data from './data'
 import { IoColorFilterOutline } from "react-icons/io5"
 import {useModalContext} from '../../context/modal-context'

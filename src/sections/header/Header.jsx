@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import data from './data'
-import HeaderImage from '../../assets/header.jpg'
+import Typewriter from '../../components/typewriter/Typewriter'
 import './header.css'
 
 import AOS from 'aos'
@@ -14,13 +14,16 @@ const Header = () => {
   return (
     <header id='header'>
       <div className="container header__container">
-        <div className="header__profile" data-aos="fade-in">
-          <img src={HeaderImage} alt="Portrait" />
-        </div>
-        <h3 data-aos="fade-up">Kenneth Imade</h3>
+        <Typewriter textList={[
+          "Data Engineer 👨🏽‍🔧", 
+          "Machine Learning Engineer 🧠",
+          "Data Analyst 📈",
+          "AI Developer 🤖",
+          "Analytics Engineer 🕵🏽‍♂️"
+        ]} />
         <p data-aos="fade-up">
-          I build data-driven applications that turn insights into action. With expertise in software engineering,
-          data science, and web development, I create scalable solutions that empower businesses and users.
+          Hi there, My name is Kenneth. A Software Engineer focused on data science and engineering.
+          With expertise in software engineering and data science, I create scalable solutions that empower businesses and users.
         </p>
         <div className="header__cta" data-aos="fade-up">
           <a href="#contact" className='btn primary'>Let's Talk</a>

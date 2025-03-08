@@ -23,9 +23,10 @@ header {
 }
 
 .header__container p {
-    width: 35rem;
+    width: 45rem;
     text-align: center;
-    margin: 0.6rem 0.2rem;
+    margin: 2.6rem 0.2rem;
+    font-size: 1.2rem;
 }
 
 .header__cta {
