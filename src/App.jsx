@@ -21,30 +21,20 @@ const App= () => {
   const [showFloatingNav, setShowFloatingNav] = useState(true);
   const [siteYPosition, setSiteYPosition] = useState(0);
 
-  const showFloatingNavHandler = () => {
-    setShowFloatingNav(true);
-  }
-
-  const hideFloatingNavHandler = () => {
-    setShowFloatingNav(false);
-  }
-
   const floatingNavTogglerHandler = () => {
-    if (siteYPosition < (mainRef?.current?.getBoundingClientRect().y - 20) || 
-    siteYPosition > (mainRef?.current?.getBoundingClientRect().y + 20)) {
-      showFloatingNavHandler();
-    } else {
-      hideFloatingNavHandler();
-    }
-
-    setSiteYPosition(mainRef?.current?.getBoundingClientRect().y);
-  }
+    const currentY = mainRef?.current?.getBoundingClientRect()?.y || 0;
+    setShowFloatingNav(Math.abs(siteYPosition - currentY) > 20);
+    setSiteYPosition(currentY);
+  };
 
   useEffect(() => {
-    const checkYPosition = setInterval(floatingNavTogglerHandler, 2000);
+    const handleScroll = () => floatingNavTogglerHandler();
+    window.addEventListener('scroll', handleScroll);
+    // const checkYPosition = setInterval(floatingNavTogglerHandler, 2000);
 
-    return () => clearInterval(checkYPosition);
-  }, [siteYPosition])
+    // return () => clearInterval(checkYPosition);
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
     <main 
