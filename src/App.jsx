@@ -8,7 +8,7 @@ import Footer from './sections/footer/Footer';
 import FloatingNav from './sections/floating-nav/FloatingNav';
 import Theme from './theme/Theme';
 import { useThemeContext } from './context/theme-context';
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect, useCallback } from 'react';
 
 // import Testimonials from './sections/testimonials/Testimonials';
 // import FAQs from './sections/faqs/FAQs';
@@ -21,20 +21,18 @@ const App= () => {
   const [showFloatingNav, setShowFloatingNav] = useState(true);
   const [siteYPosition, setSiteYPosition] = useState(0);
 
-  const floatingNavTogglerHandler = () => {
+  const floatingNavTogglerHandler = useCallback(() => {
     const currentY = mainRef?.current?.getBoundingClientRect()?.y || 0;
     setShowFloatingNav(Math.abs(siteYPosition - currentY) > 20);
     setSiteYPosition(currentY);
-  };
+  },[siteYPosition]);
 
   useEffect(() => {
     const handleScroll = () => floatingNavTogglerHandler();
     window.addEventListener('scroll', handleScroll);
-    // const checkYPosition = setInterval(floatingNavTogglerHandler, 2000);
-
-    // return () => clearInterval(checkYPosition);
+    
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  }, [floatingNavTogglerHandler])
 
   return (
     <main 
