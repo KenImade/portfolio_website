@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import AboutImage from '../../assets/about.jpg'
+import AboutImage from '../../assets/about.png'
 import CV from '../../assets/cv.pdf';
 import data from './data';
 import './about.css'
