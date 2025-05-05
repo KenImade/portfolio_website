@@ -1,5 +1,6 @@
 import realEstateDashboardImage from '../../assets/real_estate_dashboard.jpg';
 import stockMarketDagImage from '../../assets/stockMarketDAG.png';
+import serviceDeskImage from '../../assets/service_desk_dashboard.png';
 
 const data = [
     {
@@ -21,6 +22,16 @@ const data = [
         tools: ['Airflow','Metabase','PostgreSQL', 'Python', 'Spark', 'Docker', 'Minio'],
         demo: "https://github.com/KenImade/stock_market_pipeline",
         github: "https://github.com/KenImade/stock_market_pipeline"
+    },
+    {
+        id: 3,
+        category: 'data analytics',
+        image: serviceDeskImage,
+        title: "Service Desk Performance Dashboard",
+        desc: "I developed a service desk performance dashboard as part of my internship with Techway Placements. It provided insights into the performance of the service desk team in dealing with various tickets being raised by various customers.",
+        tools: ['Excel','Looker Studio'],
+        demo: "https://lookerstudio.google.com/s/pTsoz1HuqbE",
+        github: "https://lookerstudio.google.com/s/pTsoz1HuqbE"
     },
 ]
 
