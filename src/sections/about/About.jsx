@@ -38,23 +38,19 @@ const About = () => {
             }
           </div> */}
           <p>
-            Hi, I'm Kenneth, a passionate Software Engineer with a strong focus on Data Science and Engineering.
-            With a deep understanding of building data-driven solutions, 
-            I work at the intersection of cutting-edge technologies to solve complex problems and drive business impact.
+            Hi, I’m Kenneth a software engineer who loves building things that work behind the scenes. While I’ve always been drawn to data science, 
+            I’ve realized what I enjoy most is the technical side of it, designing the systems, pipelines, and tools that make data useful in the first place.
           </p>
           <p>
-            I specialize in developing data pipelines, implementing machine learning models, and creating scalable applications. 
-            My experience includes working with technologies such as Python, SQL, Apache Spark, Airflow, Flask, Django, and React, 
-            and I enjoy leveraging the latest advancements in cloud computing and big data to deliver impactful results.
+            I have a strong foundation in backend development and I’m actively building web apps to strengthen my full-stack skills. 
+            I enjoy working with technologies like Python, SQL, Flask, Django, React, Apache Spark, and Airflow, and I’m especially 
+            interested in how cloud platforms and big data tools can be used to build scalable, reliable systems.
           </p>
           <p>
-            Whether it’s building automated data workflows, crafting full-stack web applications, or applying machine learning 
-            techniques to solve real-world problems, I thrive in fast-paced environments and love learning new tools and methods 
-            to improve the solutions I build.
-          </p>
-          <p>
-            I’m passionate about transforming raw data into actionable insights and creating software solutions that help organizations 
-            achieve their goals.
+            Whether it’s setting up automated data workflows, integrating machine learning models, or creating backend APIs for web apps, 
+            I love solving technical challenges and figuring out how everything fits together. I’m constantly learning and improving, 
+            and I’m excited about roles that let me dive deeper into the engineering side of data while continuing to grow as a backend 
+            and full-stack developer.
           </p>
           <a href={CV} download className='btn primary'>Download CV <FaFileDownload /></a>
         </div>

@@ -15,6 +15,7 @@ const Header = () => {
     <header id='header'>
       <div className="container header__container">
         <Typewriter textList={[
+          "Software Engineer 🧑🏽‍💻",
           "Data Engineer 👨🏽‍🔧", 
           "Machine Learning Engineer 🧠",
           "Data Analyst 📈",
@@ -22,8 +23,7 @@ const Header = () => {
           "Analytics Engineer 🕵🏽‍♂️"
         ]} />
         <p data-aos="fade-up">
-          Hi there, My name is Kenneth. A Software Engineer focused on data science and engineering.
-          With expertise in software engineering and data science, I create scalable solutions that empower businesses and users.
+          Hi there, My name is Kenneth Imade. A Self-Taught Software Engineer with expertise in software engineering and data science. I create scalable solutions that empower businesses and users.
         </p>
         <div className="header__cta" data-aos="fade-up">
           <a href="#contact" className='btn primary'>Let's Talk</a>
