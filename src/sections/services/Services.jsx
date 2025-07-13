@@ -13,8 +13,8 @@ const Services = () => {
     
   return (
     <section id="services">
-        <h2>Services</h2>
-        <p>I give you the best in all the services below</p>
+        <h2 className='service__title'>Areas of Expertise</h2>
+        {/* <p>I give you the best in all the services below</p> */}
         <div className="container services__container" data-aos="fade-up">
           {
             data.map(item => (

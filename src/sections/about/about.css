@@ -47,6 +47,10 @@
     margin: 1rem 0;
 }
 
+.about__right h2 {
+    margin-bottom: 1.2rem;
+}
+
 .about__right p {
     margin-bottom: 0.8rem;
 }

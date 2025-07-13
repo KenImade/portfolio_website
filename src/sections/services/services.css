@@ -11,12 +11,6 @@
     width: 100%;
 }
 
-.services__container > :nth-child(3) {
-    grid-column: span 2;
-    justify-self: center;
-    width: 50%;
-}
-
 .card.service {
     display: flex;
     align-items: flex-start;
@@ -30,6 +24,10 @@
     font-size: 1.5rem;
     color: var(--color-white);
     transition: var(--transition);
+}
+
+.service__title {
+    margin-bottom: 1.2rem;
 }
 
 .service:hover .service__icon {
