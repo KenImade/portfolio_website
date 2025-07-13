@@ -18,7 +18,7 @@ const Typewriter = ({textList}) => {
         return () => {
             typedInstance.current.destroy();
         };
-    }, []);
+    }, [textList]);
 
   return (
     <div className='typed__text-container'>

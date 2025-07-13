@@ -3,12 +3,9 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import AboutImage from '../../assets/about.png'
 import CV from '../../assets/cv.pdf';
-import data from './data';
 import './about.css'
-
 import { FaFileDownload } from "react-icons/fa";
 
-import Card from '../../components/card/Card';
 
 
 const About = () => {
@@ -21,22 +18,11 @@ const About = () => {
       <div className="container about__container">
         <div className="about__left">
           <div className="about__portrait">
-            <img src={AboutImage} alt="About Image" />
+            <img src={AboutImage} alt="About" />
           </div>
         </div>
         <div className="about__right">
           <h2>About Me</h2>
-          {/* <div className="about__cards">
-            {
-              data.map(item => (
-                <Card key={item.id} className="about__card">
-                  <span className="about__card-icon">{item.icon}</span>
-                  <h5>{item.title}</h5>
-                  <small>{item.desc}</small>
-                </Card>
-              ))
-            }
-          </div> */}
           <p>
             Hi, I’m Kenneth a software engineer who loves building things that work behind the scenes. While I’ve always been drawn to data science, 
             I’ve realized what I enjoy most is the technical side of it, designing the systems, pipelines, and tools that make data useful in the first place.

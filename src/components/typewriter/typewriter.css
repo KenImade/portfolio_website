@@ -1,7 +1,8 @@
 .typed__text-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 1.5rem;
+    width: 100%;
+    /* margin-bottom: 1.5rem; */
 }
 
 .typed__text {
@@ -15,4 +16,11 @@
     font-size: 5rem;
     color:var(--color-primary);
     font-weight: bold;
+}
+
+/* MEDIA QUERIES (PHONES) */
+@media screen and (max-width: 600px) {
+    .typed__text, .typed-cursor {
+        font-size: 2rem;
+    }
 }
